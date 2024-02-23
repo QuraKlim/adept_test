@@ -34,7 +34,9 @@ export const employeesSlice = createSlice({
       state.employeesList.unshift({
         ...action.payload,
         companyId: +action.payload.companyId,
-        id: state.employeesList[state.employeesList.length - 1].id + 1,
+        id: state.employeesList.length
+          ? state.employeesList[state.employeesList.length - 1].id + 1
+          : 1,
         selected: false,
       });
     },

@@ -31,7 +31,9 @@ export const companiesSlice = createSlice({
     addCompany: (state, action: IAction<AddCompanyType>) => {
       state.companiesList.unshift({
         ...action.payload,
-        id: state.companiesList[state.companiesList.length - 1].id + 1,
+        id: state.companiesList.length
+          ? state.companiesList[state.companiesList.length - 1].id + 1
+          : 1,
         selected: false,
       });
     },
