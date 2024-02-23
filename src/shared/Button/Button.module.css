@@ -1,0 +1,11 @@
+.button {
+  padding: 5px 10px;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  &:hover {
+    transform: translateY(-1px);
+  }
+}

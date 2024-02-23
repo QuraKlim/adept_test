@@ -1,0 +1,25 @@
+.modal_wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  position: relative;
+  top: 20vh;
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 40px;
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  cursor: pointer;
+  padding: 10px;
+}

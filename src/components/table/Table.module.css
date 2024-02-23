@@ -1,0 +1,103 @@
+.table {
+  align-items: center;
+  grid-auto-rows: 70px;
+  gap: 15px;
+  max-height: 90vh;
+  overflow-y: scroll;
+  margin-top: 70px;
+}
+
+.table_header {
+  display: flex;
+  gap: 40px;
+  height: 40px;
+  padding: 13px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 30px;
+  background-color: white;
+}
+
+.choose_all {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+
+table {
+  position: relative;
+  border-collapse: collapse;
+  width: 100%;
+  thead {
+    position: sticky;
+    top: 0;
+    background-color: white;
+  }
+  tfoot {
+    position: sticky;
+    bottom: -2px;
+    top: auto;
+    width: 100%;
+    text-align: center;
+    td {
+      height: 70px;
+      background-color: white;
+    }
+  }
+  tr {
+    height: 11vh;
+    th {
+      text-align: start;
+    }
+    td {
+      padding: 0 5px;
+    }
+  }
+}
+
+.choosen_row {
+  background-color: var(--primary-color);
+}
+
+.check {
+  width: 40px;
+}
+
+.trash {
+  padding: 5px;
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
+.button {
+  padding: 5px 10px;
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  &:hover {
+    transform: translateY(-1px);
+  }
+}
+
+.table::-webkit-scrollbar {
+  width: 20px;
+}
+
+.table::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.table::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+.table::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
